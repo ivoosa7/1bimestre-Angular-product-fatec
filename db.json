@@ -17,6 +17,12 @@
     "name": "Livro",
     "price": 50,
     "category": "Livros"
+  },
+  {
+    "id": 4,
+    "name": "Notebooks",
+    "price": 2500,
+    "category": "Eletrônicos"
   }
 ]
 }
