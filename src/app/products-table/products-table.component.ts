@@ -1,6 +1,6 @@
+import { ProductService } from './../product.service';
 import { Component, OnInit } from '@angular/core';
 import { Product } from '../product';
-import { ProductService } from '../product.service';
 
 @Component({ //so é um component por conta deste decorator @Component;
   selector: 'app-products-table',
@@ -19,5 +19,10 @@ export class ProductsTableComponent implements OnInit{ //Classe TypeScript;
       next: data => this.products = data
     }
   );
+  }
+  delete(product: Product){
+    this.service.delete(product).subscribe({
+      next: () => this.loadProducts()
+    });
   }
 }
