@@ -9,12 +9,14 @@ import localePt from '@angular/common/locales/pt';
 import {registerLocaleData} from '@angular/common';
 import { ProductsTableComponent } from './products-table/products-table.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ProductFormComponent } from './product-form/product-form.component';
 registerLocaleData(localePt)
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductsTableComponent
+    ProductsTableComponent,
+    ProductFormComponent
   ],
   imports: [
     BrowserModule,
