@@ -1,15 +1,35 @@
 <div class="container">
-  <div class="mb-3">
-    <label for="exampleFormControlInput1" class="form-label">Nome</label>
-    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Nome do Produto">
-  </div>
-  <div class="mb-3">
-    <label for="exampleFormControlInput2" class="form-label">Preço</label>
-    <input type="number" class="form-control" id="exampleFormControlInput2" placeholder="Preço do Produto">
-  </div>
-  <div class="mb-3">
-    <label for="exampleFormControlInput3" class="form-label">Categoria</label>
-    <input type="name" class="form-control" id="exampleFormControlInput3" placeholder="Categoria do Produto">
-  </div>
-  <button type="button" class="btn btn-success">Salvar</button>
+  <form [formGroup]="formGroupProduct">
+    <div class="mb-3">
+      <label for="name" class="form-label">Nome</label>
+      <input  formControlName="name"
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Nome do Produto">
+    </div>
+    <div class="mb-3">
+      <label for="price" class="form-label">Preço</label>
+      <input  formControlName = "price"
+              type="number"
+              class="form-control"
+              id="price"
+              placeholder="Preço do Produto">
+    </div>
+    <div class="mb-3">
+      <label for="category" class="form-label">Categoria</label>
+      <input  formControlName="category"
+              type="name"
+              class="form-control"
+              id="category"
+              placeholder="Categoria do Produto">
+    </div>
+    <button
+        type="button"
+        class="btn btn-success"
+        (click)="update()"
+        >Salvar
+    </button>
+  </form>
 </div>
+

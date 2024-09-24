@@ -10,6 +10,7 @@ import {registerLocaleData} from '@angular/common';
 import { ProductsTableComponent } from './products-table/products-table.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductFormComponent } from './product-form/product-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 registerLocaleData(localePt)
 
 @NgModule({
@@ -22,7 +23,8 @@ registerLocaleData(localePt)
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [{
     provide: LOCALE_ID,

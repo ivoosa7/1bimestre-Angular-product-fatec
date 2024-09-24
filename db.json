@@ -1,29 +1,28 @@
 {
   "products": [
-  {
-    "id": 1,
-    "name": "Smartphone",
-    "price": 1500,
-    "category": "Eletrônicos"
-  },
-  {
-    "id": 2,
-    "name": "Tênis",
-    "price": 200,
-    "category": "Esporte"
-  },
-  {
-    "id": 3,
-    "name": "Livro",
-    "price": 50,
-    "category": "Livros"
-  },
-  {
-    "id": 4,
-    "name": "Notebooks",
-    "price": 2500,
-    "category": "Eletrônicos"
-  }
-]
+    {
+      "id": 1,
+      "name": "Smartphone",
+      "price": 1500,
+      "category": "Eletrônicos"
+    },
+    {
+      "id": 2,
+      "name": "Tênis",
+      "price": 200,
+      "category": "Esporte"
+    },
+    {
+      "id": 3,
+      "name": "Livro",
+      "price": 50,
+      "category": "Livros"
+    },
+    {
+      "id": 4,
+      "name": "Notebook Wix",
+      "price": 2500,
+      "category": "Eletrônicos"
+    }
+  ]
 }
-

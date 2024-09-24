@@ -19,4 +19,8 @@ export class ProductService {
   delete(product:Product): Observable<void>{
     return this.http.delete<void>('http://localhost:3000/products/' + product.id);
   }
+
+  update(product: Product): Observable<Product>{
+    return this.http.put<Product>('http://localhost:3000/products/' + product.id, product)
+  }
 }
