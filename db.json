@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Smartphone",
-      "price": 1500,
+      "price": 2455,
       "category": "Eletrônicos"
     },
     {
@@ -14,8 +14,8 @@
     },
     {
       "id": 3,
-      "name": "Livro",
-      "price": 50,
+      "name": "Livro de Fogo",
+      "price": 542,
       "category": "Livros"
     },
     {
@@ -23,6 +23,12 @@
       "name": "Notebook Wix",
       "price": 2500,
       "category": "Eletrônicos"
+    },
+    {
+      "id": 5,
+      "name": "biblia",
+      "price": 450,
+      "category": "livros"
     }
   ]
 }

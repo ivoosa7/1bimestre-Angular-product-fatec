@@ -25,9 +25,17 @@
               placeholder="Categoria do Produto">
     </div>
     <button
+        *ngIf="isEditMode"
         type="button"
         class="btn btn-success"
         (click)="update()"
+        >Atualizar
+    </button>
+    <button
+        *ngIf="!isEditMode"
+        type="button"
+        class="btn btn-success"
+        (click)="save()"
         >Salvar
     </button>
   </form>

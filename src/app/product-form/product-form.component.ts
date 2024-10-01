@@ -10,6 +10,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class ProductFormComponent implements OnInit{
 
+  isEditMode:boolean = false;
+
   formGroupProduct: FormGroup; //Este formGroupProduct é um atributo que guarda o valor da classe FormGroup;
 
   constructor(private router/*este router antes dos : é um parâmetro que vai guardar a classe Router*/: Router,
@@ -29,7 +31,10 @@ export class ProductFormComponent implements OnInit{
 
   ngOnInit() {
     const id = Number(this.activeRouter.snapshot.paramMap.get("id"));
-    this.loadProduct(id);
+    this.isEditMode = id !==0
+    if(this.isEditMode){
+      this.loadProduct(id);
+    }
   }
 
   loadProduct(id:number){
@@ -40,6 +45,12 @@ export class ProductFormComponent implements OnInit{
 
   update(){
     this.service.update(this.formGroupProduct.value).subscribe({
+      next: () => this.router.navigate(['products'])
+    })
+  }
+
+  save(){
+    this.service.save(this.formGroupProduct.value).subscribe({
       next: () => this.router.navigate(['products'])
     })
   }

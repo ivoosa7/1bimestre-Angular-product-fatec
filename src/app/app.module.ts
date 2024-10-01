@@ -11,13 +11,17 @@ import { ProductsTableComponent } from './products-table/products-table.componen
 import { HttpClientModule } from '@angular/common/http';
 import { ProductFormComponent } from './product-form/product-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NavbarComponent } from './navbar/navbar.component';
+import { HomeComponent } from './home/home.component';
 registerLocaleData(localePt)
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductsTableComponent,
-    ProductFormComponent
+    ProductFormComponent,
+    NavbarComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
